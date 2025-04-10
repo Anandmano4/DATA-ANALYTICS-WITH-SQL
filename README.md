@@ -4,7 +4,10 @@
 
 ## Overview
 
-This repository contains SQL queries and outputs completed during Day 3 of my internship. The focus of the task was to analyze customer transactions in an e-commerce dataset using SQL Server Management Studio (SSMS), and perform operations like creating views, using joins, and filtering with conditions.
+This repository contains SQL queries and outputs completed during Day 3 of my internship. 
+The focus of the task was to analyze customer transactions in an e-commerce dataset using SQL Server Management Studio (SSMS),
+and perform operations like creating views, using joins, and filtering with conditions.
+
 
 ---
 
@@ -17,7 +20,7 @@ We were asked to:
 - Create a **view** to store the result
 - Display the contents of the view
 
-
+---
 
 ### SQL Query Used
 
