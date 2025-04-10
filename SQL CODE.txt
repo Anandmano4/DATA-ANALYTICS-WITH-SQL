@@ -1,0 +1,28 @@
+1.SELECT TOP 10 * FROM [YourTableName];
+
+2. SELECT TOP 10 * FROM [SalesLT].[Customer];
+
+3. SELECT * 
+FROM [SalesLT].[Customer]
+WHERE CompanyName = 'Preferred Bikes';
+
+4.SELECT * 
+FROM [SalesLT].[Customer]
+ORDER BY LastName ASC;
+
+5. SELECT CompanyName, COUNT(CustomerID) AS TotalCustomers
+FROM [SalesLT].[Customer]
+GROUP BY CompanyName;
+
+6.SELECT c.FirstName, c.LastName, o.TotalDue
+FROM [SalesLT].[Customer] c
+JOIN [SalesLT].[SalesOrderHeader] o
+ON c.CustomerID = o.CustomerID;
+
+7.SELECT FirstName, LastName
+FROM SalesLT.Customer
+WHERE CustomerID IN (
+    SELECT CustomerID
+    FROM SalesLT.SalesOrderHeader
+    WHERE TotalDue > 1000
+);
